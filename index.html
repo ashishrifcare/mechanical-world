@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Mechanical World - Marketing Services</title>
+  <link rel="icon" type="image/png" href="logo.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="header fade-in">
+    <div class="header-container">
+      <img src="logo.png" alt="Logo" class="site-logo">
+      <h1 class="logo-text">THE MECHANICAL WORLD</h1>
+      <nav class="nav">
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="menu-toggle">&#9776;</div>
+    </div>
+  </header>
+
+  <!-- Promo Banner -->
+  <section class="promo-banner">
+    <div class="promo-content">
+      <h1>💰 100% Guaranteed Earnings</h1>
+      <h2>Start Your Franchise & Earn <span>₹1 Lakh/Month</span>*</h2>
+      <p>Join <strong>The Mechanical World</strong> – India’s leading hub for mechanical innovations.</p>
+      <button class="promo-btn" onclick="openForm()">Book Your Franchise Now 🚀</button>
+    </div>
+  </section>
+
+  <!-- Hero -->
+  <section id="hero" class="hero fade-in-up">
+    <h2>India’s Top Hub for <span>Mechanical Innovations</span></h2>
+    <p>Delivering insights, trends, and solutions for engineering, industries, and technology worldwide.</p>
+    <div class="video-container">
+      <video controls preload="none" poster="video-thumbnail.jpg">
+        <source src="promo.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <button class="btn" onclick="openForm()">Let's Talk</button>
+  </section>
+
+  <!-- Dealer Gallery -->
+  <br>
+  <h2 id="gallery">Dealers Photo Gallery</h2>
+  <section class="photo-gallery fade-in-up">
+    <div class="gallery-container" id="dealers-carousel">
+      <button class="prev">&#10094;</button>
+      <div class="gallery">
+        <img src="assets/1.jpg" alt="Mechanical Work 1" loading="lazy">
+        <img src="assets/2.jpg" alt="Mechanical Work 2" loading="lazy">
+        <img src="assets/3.jpg" alt="Mechanical Work 3" loading="lazy">
+        <img src="assets/4.jpg" alt="Mechanical Work 4" loading="lazy">
+        <img src="assets/5.jpg" alt="Mechanical Work 5" loading="lazy">
+        <img src="assets/6.jpg" alt="Mechanical Work 6" loading="lazy">
+      </div>
+      <button class="next">&#10095;</button>
+    </div>
+  </section>
+
+  <!-- Franchise Videos -->
+  <h2>Franchise Photos & Videos</h2><br>
+  <section class="franchise-video fade-in-up">
+    <div class="video-container">
+      <video controls preload="none" poster="fr-t.jpg">
+        <source src="franchise.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </section>
+
+  <!-- Franchise Photo Gallery -->
+  <section class="photo-gallery fade-in-up">
+    <div class="gallery-container" id="franchise-carousel">
+      <button class="prev">&#10094;</button>
+      <div class="gallery">
+        <img src="assets/franchise/1.webp" alt="Franchise Work 1" loading="lazy">
+        <img src="assets/franchise/2.webp" alt="Franchise Work 2" loading="lazy">
+        <img src="assets/franchise/3.webp" alt="Franchise Work 3" loading="lazy">
+        <img src="assets/franchise/4.webp" alt="Franchise Work 4" loading="lazy">
+        <img src="assets/franchise/5.webp" alt="Franchise Work 5" loading="lazy">
+      </div>
+      <button class="next">&#10095;</button>
+    </div>
+  </section>
+
+ <!-- Customer Reviews Section -->
+<section class="customer-reviews">
+  <div class="reviews-container">
+    <h2 class="reviews-title">Customer Reviews</h2>
+    <div class="reviews-wrapper">
+      <video src="assets/reviews/1.webm" autoplay muted loop playsinline></video>
+      <video src="assets/reviews/2.webm" autoplay muted loop playsinline></video>
+      <video src="assets/reviews/3.webm" autoplay muted loop playsinline></video>
+      <video src="assets/reviews/4.webm" autoplay muted loop playsinline></video>
+      <video src="assets/reviews/5.webm" autoplay muted loop playsinline></video>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Embedded Franchise Form Section -->
+<section class="franchise-form-section fade-in-up">
+  <h2>Book Your Franchise</h2>
+  <p>Fill out the form below to start your franchise journey with us.</p>
+  <form action="save_response.php" method="POST" class="franchise-form">
+    <input type="text" name="name" placeholder="Name" required>
+    <input type="text" name="city" placeholder="City" required>
+    <select name="budget" required>
+      <option value="">Select Budget</option>
+      <option value="25-35">25 Lakh to 35 Lakh</option>
+      <option value="35-50">35 Lakh to 50 Lakh</option>
+    </select>
+    <input type="text" name="mobile" placeholder="Mobile Number" required>
+    <input type="email" name="email" placeholder="Email ID" required>
+    <button type="submit" class="submit-btn">
+      SUBMIT
+      <div class="loader"></div>
+    </button>
+  </form>
+</section>
+
+
+  <!-- About Us -->
+  <section id="about" class="about fade-in-up">
+    <h2>About Us</h2>
+    <p>
+      The Mechanical World is your trusted source for the latest updates in 
+      <strong>mechanical engineering, automobile trends, and technology innovations</strong>. 
+      Our mission is to empower industries and individuals with insights, research, 
+      and practical solutions that drive progress.
+    </p>
+    <p>
+      With years of experience, we aim to bridge the gap between innovation and real-world 
+      applications, helping businesses and engineers stay ahead in the fast-evolving world of 
+      mechanics and technology.
+    </p>
+  </section>
+
+  <!-- Products -->
+  <section id="products" class="products fade-in-up">
+    <h2>Our Products</h2>
+    <div class="product-grid">
+      <div class="product-card">3D Wheel Alignment Machine</div>
+      <div class="product-card">Automatic AC Service</div>
+      <div class="product-card">Hydrogen Engine Decarbonizing Machine</div>
+      <div class="product-card">Steam Washer</div>
+      <div class="product-card">Automatic Coolant & Radiator Cleaning Machine</div>
+      <div class="product-card">Paint Booth</div>
+      <div class="product-card">Nitrogen Tyre Inflator</div>
+      <div class="product-card">Car Scanner</div>
+      <div class="product-card">Vacuum Cleaner</div>
+      <div class="product-card">Other Products</div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer fade-in" id="contact">
+    <p>© 2025 The Mechanical World. All rights reserved.</p>
+  </footer>
+
+  <!-- Popup Form -->
+  <div id="popupForm" class="popup-overlay">
+    <div class="popup">
+      <span class="close-btn" onclick="closeForm()">&times;</span>
+      <h2>Franchise Booking</h2>
+      <form action="save_response.php" method="POST">
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="text" name="city" placeholder="City" required>
+        <select name="budget" required>
+          <option value="">Select Budget</option>
+          <option value="25-35">25 Lakh to 35 Lakh</option>
+          <option value="35-50">35 Lakh to 50 Lakh</option>
+        </select>
+        <input type="text" name="mobile" placeholder="Mobile Number" required>
+        <input type="email" name="email" placeholder="Email ID" required>
+        <button type="submit" class="submit-btn">
+          SUBMIT
+          <div class="loader"></div>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- JS -->
+ <script>
+  function openForm() { 
+    document.getElementById("popupForm").classList.add("active"); 
+  }
+  function closeForm() { 
+    document.getElementById("popupForm").classList.remove("active"); 
+  }
+
+  document.querySelector(".menu-toggle").addEventListener("click", () => {
+    document.querySelector(".nav ul").classList.toggle("active");
+  });
+
+  // Loader on submit for all forms
+  document.querySelectorAll("form").forEach(form => {
+    form.addEventListener("submit", function() {
+      const submitBtn = this.querySelector(".submit-btn");
+      submitBtn.classList.add("loading");
+    });
+  });
+
+  // Carousel Functionality
+  document.addEventListener("DOMContentLoaded", () => {
+    function initCarousel(selector) {
+      const container = document.querySelector(selector);
+      if (!container) return;
+      const gallery = container.querySelector(".gallery");
+      const prev = container.querySelector(".prev");
+      const next = container.querySelector(".next");
+      const images = gallery.querySelectorAll("img");
+      let index = 0;
+
+      images.forEach(img => {
+        img.style.flex = "0 0 100%";
+        img.style.display = "block";
+      });
+
+      function show(i) {
+        index = (i + images.length) % images.length;
+        gallery.style.transform = `translateX(-${index * 100}%)`;
+      }
+
+      next.addEventListener("click", () => show(index + 1));
+      prev.addEventListener("click", () => show(index - 1));
+
+      let autoSlide = setInterval(() => show(index + 1), 3000);
+      container.addEventListener("mouseenter", () => clearInterval(autoSlide));
+      container.addEventListener("mouseleave", () => autoSlide = setInterval(() => show(index + 1), 3000));
+    }
+
+    initCarousel("#dealers-carousel");
+    initCarousel("#franchise-carousel");
+  });
+</script>
+
+</body>
+</html>
